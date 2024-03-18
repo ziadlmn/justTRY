@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff4d4d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .heart {
+            width: 100px;
+            height: 90px;
+            position: relative;
+            margin: auto;
+            animation: beat 1s infinite alternate;
+            margin-bottom: 30px;
+        }
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background-color: #ff4d4d;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        @keyframes beat {
+            to {
+                transform: scale(1.1);
+            }
+        }
+        .love {
+            font-size: 24px;
+            color: #ff4d4d;
+            animation: heartbeat 1s infinite;
+        }
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>L'Amour</h1>
+    </header>
+    <div class="container">
+        <p>L'amour est un voyage magique, un rêve éveillé qui nous transporte dans un océan de bonheur infini. C'est une force irrésistible qui nous unit et illumine nos vies d'une lumière éclatante.</p>
+        <p>Quand deux âmes se rencontrent et que leurs cœurs se reconnaissent, c'est comme si le monde entier s'arrêtait pour les laisser savourer chaque instant ensemble. C'est un sentiment pur et puissant qui transcende les limites du temps et de l'espace.</p>
+        <div class="heart"></div>
+        <p>Dans le jardin de l'amour, chaque fleur est une pensée douce, chaque étoile est un rêve réalisé et chaque baiser est une promesse d'éternité. Laissez-vous emporter par la douce mélodie de l'amour et dansez au rythme de vos cœurs qui battent à l'unisson.</p>
+        <p class="love">"L'amour est la clé qui ouvre les portes de l'âme."</p>
+    </div>
+</body>
+</html>
+
